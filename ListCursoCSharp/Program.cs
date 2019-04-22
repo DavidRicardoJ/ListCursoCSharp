@@ -9,7 +9,7 @@ namespace ListCursoCSharp
         static void Main(string[] args)
         {
             List<Employee> list = new List<Employee>();
-            
+
 
             Console.Write("How many employees will be registered? ");
             int n = int.Parse(Console.ReadLine());
@@ -25,7 +25,7 @@ namespace ListCursoCSharp
                 double salary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.WriteLine();
 
-                list.Add(new Employee(id,name, salary));
+                list.Add(new Employee(id, name, salary));
             }
             Console.Write("Enter the employee id that will have salary increase :");
             int searchId = int.Parse(Console.ReadLine());
@@ -34,8 +34,8 @@ namespace ListCursoCSharp
             if (emp != null)
             {
                 Console.Write("Enter the percentage: ");
-                emp.increaseSalary(double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture));
-               
+                emp.increaseSalary(double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
+
             }
             else
             {

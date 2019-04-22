@@ -19,7 +19,7 @@ namespace ListCursoCSharp
 
         public void increaseSalary(double percentage)
         {
-            Salary *= (1 + percentage/100);
+            Salary *= (1 + percentage / 100);
         }
 
         public override string ToString()
